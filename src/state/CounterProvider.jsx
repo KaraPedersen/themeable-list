@@ -2,6 +2,7 @@ import React, { createContext, useContext, useState } from 'react';
 
 export const CounterContext = createContext();
 
+// eslint-disable-next-line react/prop-types
 export const CounterProvider = ({ children }) => {
   const [count, setCount] = useState(0);
 

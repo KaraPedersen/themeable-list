@@ -10,7 +10,7 @@ const CharacterList = () => {
     </li>
   ));
 
-  return <ul style={{ listStyle: 'none' }}> {characterElements}</ul>;
+  return <ul>{characterElements}</ul>;
 };
 
 export default CharacterList;

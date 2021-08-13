@@ -1,10 +1,13 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { fetchAirBenderCharacters } from '../services/airBenderApi';
 import { fetchRickAndMortyCharacters } from '../services/rickAndMortyApi';
+import { fetchHeyArnoldCharacters } from '../services/heyArnoldApi';
+
 
 const CharacterContext = createContext();
 
+// eslint-disable-next-line react/prop-types
 export const CharacterProvider = ({ children }) => {
   const headers = {
     dark: {
@@ -19,11 +22,12 @@ export const CharacterProvider = ({ children }) => {
   
   const [characters, setCharacters] = useState([]);
   const [currentHeader, setCurrentHeader] = useState(headers.light);
-  const [selectedApi, setSelectedApi] = useState('rickAndMorty');
+  const [selectedApi, setSelectedApi] = useState('RickAndMorty');
 
   const apiMap = {
-    rickAndMorty: fetchRickAndMortyCharacters,
+    RickAndMorty: fetchRickAndMortyCharacters,
     Airbender: fetchAirBenderCharacters,
+    HeyArnold: fetchHeyArnoldCharacters,
   };
 
   useEffect(() => {
