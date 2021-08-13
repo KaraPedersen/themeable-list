@@ -2,6 +2,7 @@ import React from 'react';
 import { useHeaders } from '../../state/CharacterProvider';
 import styles from './Header.css';
 
+
 const Header = () => {
   const { handleHeaderChange } = useHeaders();
 

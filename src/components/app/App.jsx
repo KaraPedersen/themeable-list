@@ -6,6 +6,7 @@ import CharacterList from '../characters/CharacterList';
 import CharacterToggle from '../characters/CharacterToggle';
 import Header from './Header';
 
+
 const Home = () => {
   return <h1>Home page</h1>;
 };
