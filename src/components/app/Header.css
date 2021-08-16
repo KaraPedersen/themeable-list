@@ -1,0 +1,14 @@
+.Header {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  grid-template-columns: auto 5% 5% 5%;
+  border: 2px solid purple;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: -webkit-linear-gradient(left,#FFE6FF 0%, #FF80FF 50%, #E600E6 100%);
+  width: 100%;
+  font: 1.5rem purple;
+}
+
